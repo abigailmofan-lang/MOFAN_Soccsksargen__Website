@@ -1,0 +1,188 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f6ebd9;
+  color: #2720e7;
+}
+h1, h2, h3 { 
+  font-family: Georgia, serif; 
+}
+
+header {
+  background: #101f7e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 { 
+  margin-top: 20px; 
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+header nav a:hover { 
+  text-decoration: underline; 
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+
+
+.hero img { 
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover; }
+
+.intro { 
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 30px 20px; }
+.intro p { 
+  margin-bottom: 14px; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+.destinations, .activities, .history, .trip {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.destinations h2, .activities h2, .history h2, .trip h2 {
+  color: #2429bf;
+  margin-bottom: 10px;
+}
+.destinations img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+.destinations h3 { 
+  margin-top: 25px; 
+}
+.destinations p { 
+  margin-bottom: 10px; 
+}
+
+
+
+.activities h3, .history h3, .trip h3 {
+  color: #4640f5;
+  margin-top: 20px;
+}
+.activities ul, .history ul, .trip ul {
+  list-style-type: square;
+  padding-left: 25px;
+  margin: 10px 0;
+}
+.activities li, .history li, .trip li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.history p { margin-bottom: 14px; }
+
+
+
+.trip table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+}
+.trip table th {
+  background: #3b26de;
+  color: white;
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+.trip table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.trip .checklist { 
+  list-style-type: none;
+  padding-left: 0; 
+}
+.trip .checklist label {
+  cursor: pointer; 
+}
+.trip .checklist input {
+  margin-right: 10px; 
+}
+
+.trip form { display: flex; 
+  flex-direction: column; 
+  gap: 6px; 
+}
+.trip label { font-weight: bold; 
+  margin-top: 10px; 
+}
+.trip input, .trip textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+.trip button {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 10px 30px;
+  background: #0f5570;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.trip button:hover {
+  background: #0a3d52; }
+ 
+
+
+
+footer {
+  background: #0f0a78;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .links, .gallery { grid-template-columns: 1fr; }
+}

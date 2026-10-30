@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan Your Trip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="activities.html">Activities</a>
+      <a href="history.html">History</a>
+      <a href="#">Plan Trip</a>
+    </nav>
+  </header>
+<div class="trip">
+  <h2>Plan Your Trip</h2>
+  <table>
+    <tr><th>Day</th><th>Activities</th></tr>
+    <tr><td>Day 1</td><td>🏙️ City Tour</td></tr>
+    <tr><td>Day 2</td><td>🏖️ Beach Adventure</td></tr>
+    <tr><td>Day 3</td><td>🎉 Cultural Festival</td></tr>
+  </table>
+
+  <h3>💡 Travel Tips</h3>
+  <ul>
+    <li>Bring sunscreen</li>
+    <li>Pack light clothes</li>
+    <li>Stay hydrated</li>
+  </ul>
+
+  <h3>🎒 Packing Checklist</h3>
+  <ul class="checklist">
+    <li><label><input type="checkbox"> Valid ID and travel documents</label></li>
+    <li><label><input type="checkbox"> Cash and cards</label></li>
+    <li><label><input type="checkbox"> Light, breathable clothes</label></li>
+    <li><label><input type="checkbox"> Swimwear and extra towel</label></li>
+    <li><label><input type="checkbox"> Comfortable walking shoes or sandals</label></li>
+    <li><label><input type="checkbox"> Sunscreen and insect repellent</label></li>
+    <li><label><input type="checkbox"> Reusable water bottle</label></li>
+    <li><label><input type="checkbox"> Raincoat or small umbrella</label></li>
+    <li><label><input type="checkbox"> Phone, charger, and power bank</label></li>
+    <li><label><input type="checkbox"> Toiletries and personal medicines</label></li>
+  </ul>
+
+  <h3>✉️ Contact Us</h3>
+  <form action="mailto:info@tourism.com" method="post" enctype="text/plain">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Planned Visit Date</label>
+    <input type="date" id="date" name="date">
+
+    <label for="travelers">Number of Travelers</label>
+    <input type="number" id="travelers" name="travelers" min="1" value="1">
+
+    <label for="notes">Questions/Notes</label>
+    <textarea id="notes" name="notes" rows="5"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+  <footer>
+    <p>Contact us: abigail.mofan@lsu.edu.ph</p>
+  </footer>
+</body>
+</html>
